@@ -9,6 +9,12 @@ header {
 
 nav {
     background-color: #0066cc;
+    display: inline-block;
+    width: 80%;
+}
+
+nav img {
+    width: 10%;
 }
 
 main {
@@ -20,10 +26,12 @@ footer {
     background-color: #666666;
 }
 
+/* Commented out existing styling for the li element
 li {
     display: block;
     width: 100%;
 }
+*/
 
 h1 {
     text-align: center;
@@ -33,4 +41,23 @@ h1 {
 
 p {
     line-height: 1.5;
+}
+
+/* Style the grid class to use a two-column grid where each column is approximately 40% */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+}
+
+/* Style only the images in the grid class to have a width of 100% */
+.grid img {
+    width: 100%;
+}
+
+/* Style the flex class to use flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust justify-content to copy the look */
+    row-gap: 20px; /* Adjust row-gap to copy the look */
 }
